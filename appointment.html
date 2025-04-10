@@ -1,0 +1,61 @@
+ <!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Book an Appointment - Aga Khan University Hospital Nairobi</title>  
+    <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+    <header>  
+        <h1>Book an Appointment</h1>  
+        <p>Aga Khan University Hospital, Nairobi</p>  
+    </header>  
+
+    <section>  
+        <h2>Appointment Booking Form</h2>  
+        <form id="appointmentForm" action="submit_appointment.php" method="POST">  
+            <label for="patientName">Full Name:</label>  
+            <input type="text" id="patientName" name="patientName" required>  
+
+            <label for="email">Email Address:</label>  
+            <input type="email" id="email" name="email" required>  
+
+            <label for="phone">Phone Number:</label>  
+            <input type="tel" id="phone" name="phone" required>  
+
+            <label for="doctor">Choose a Doctor:</label>  
+            <select id="doctor" name="doctor" required>  
+                <option value="" disabled selected>Select a doctor</option>  
+                <option value="Dr. Jane Doe">Dr. Jane Doe - General Practitioner</option>  
+                <option value="Dr. John Smith">Dr. John Smith - Cardiologist</option>  
+                <option value="Dr. Emily Wang">Dr. Emily Wang - Pediatrician</option>  
+                <option value="Dr. Sara Khan">Dr. Sara Khan - Orthopedic Surgeon</option>  
+            </select>  
+
+            <label for="date">Select Appointment Date:</label>  
+            <input type="date" id="date" name="date" required>  
+
+            <label for="time">Select Appointment Time:</label>  
+            <select id="time" name="time" required>  
+                <option value="" disabled selected>Select a time</option>  
+                <option value="09:00">09:00 AM</option>  
+                <option value="10:00">10:00 AM</option>  
+                <option value="11:00">11:00 AM</option>  
+                <option value="13:00">01:00 PM</option>  
+                <option value="14:00">02:00 PM</option>  
+                <option value="15:00">03:00 PM</option>  
+            </select>  
+
+            <label for="message">Additional Information:</label>  
+            <textarea id="message" name="message" rows="4" placeholder="Please provide any additional details..."></textarea>  
+
+            <button type="submit">Book Appointment</button>  
+        </form>  
+    </section>  
+
+    <footer>  
+        <p>&copy; 2025 Aga Khan University Hospital, Nairobi. All rights reserved.</p>  
+    </footer>  
+</body>  
+</html>  
